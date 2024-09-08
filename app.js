@@ -22,6 +22,7 @@ document.getElementById("search-btn").addEventListener("click", function () {
   // Hava məlumatını almaq üçün sorğu
   if (city) {
     getWeather(city);
+    document.getElementById("city-input").value = ""; 
   } else {
     alert("Zəhmət olmasa, şəhər adı daxil edin.");
   }
